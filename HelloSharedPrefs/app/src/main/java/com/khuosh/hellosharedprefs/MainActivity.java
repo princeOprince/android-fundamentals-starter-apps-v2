@@ -13,14 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.hellosharedprefs;
+package com.khuosh.hellosharedprefs;
 
 import android.graphics.drawable.ColorDrawable;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 /**
  * HelloSharedPrefs is an adaptation of the HelloToast app from chapter 1.
@@ -41,9 +42,11 @@ public class MainActivity extends AppCompatActivity {
     private TextView mShowCountTextView;
 
     // Key for current count
-    private final String COUNT_KEY = "count";
+    private final String COUNT_KEY = "com.khuosh.hellosharedprefs.COUNT_KEY";
     // Key for current color
-    private final String COLOR_KEY = "color";
+    private final String COLOUR_KEY = "com.khuosh.hellosharedprefs.COLOUR_KEY";
+
+    // Initialse the 
 
 
     @Override
@@ -64,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 mShowCountTextView.setText(String.format("%s", mCount));
             }
 
-            mColor = savedInstanceState.getInt(COLOR_KEY);
+            mColor = savedInstanceState.getInt(COLOUR_KEY);
             mShowCountTextView.setBackgroundColor(mColor);
         }
     }
@@ -105,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
 
         outState.putInt(COUNT_KEY, mCount);
-        outState.putInt(COLOR_KEY, mColor);
+        outState.putInt(COLOUR_KEY, mColor);
     }
 
     /**

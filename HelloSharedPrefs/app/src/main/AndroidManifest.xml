@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.android.hellosharedprefs">
+          package="com.khuosh.hellosharedprefs">
 
     <application
         android:allowBackup="true"
@@ -21,7 +21,7 @@ limitations under the License. -->
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.khuosh.hellosharedprefs.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
