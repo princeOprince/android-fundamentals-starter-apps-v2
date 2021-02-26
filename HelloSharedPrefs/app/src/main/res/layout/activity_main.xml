@@ -32,6 +32,7 @@
         android:text="@string/default_count"
         android:textColor="@android:color/white"
         android:textSize="112sp"
+        android:onClick="countUp"
         app:layout_constraintBottom_toTopOf="@+id/guideline_upper"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"

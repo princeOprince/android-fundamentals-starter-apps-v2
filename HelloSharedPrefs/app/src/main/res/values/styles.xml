@@ -32,4 +32,9 @@ limitations under the License. -->
     <style name="AppTheme.Button.Colored" parent="AppTheme.Button">
         <item name="android:textColor">@android:color/white</item>
     </style>
+
+    <!-- Preference theme -->
+    <style name="AppTheme.Preference">
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
 </resources>

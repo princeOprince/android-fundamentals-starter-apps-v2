@@ -1,0 +1,10 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:iconSpaceReserved="false"
+        app:key="keep_count"
+        app:summary="@string/switch_summary"
+        app:title="@string/switch_title" />
+
+</PreferenceScreen>

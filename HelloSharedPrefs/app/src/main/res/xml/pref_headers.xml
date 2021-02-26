@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        app:fragment="com.khuosh.hellosharedprefs.GeneralFragment"
+        app:icon="@android:drawable/star_big_on"
+        app:key="general_header"
+        app:title="General" />
+
+    <Preference
+        app:fragment="com.khuosh.hellosharedprefs.NotificationsFragment"
+        app:icon="@android:drawable/ic_popup_reminder"
+        app:key="notifications_header"
+        app:title="Notifications" />
+
+    <Preference
+        app:fragment="com.khuosh.hellosharedprefs.AccountFragment"
+        app:icon="@android:drawable/ic_dialog_map"
+        app:key="account_header"
+        app:title="@string/pref_title_account_header" />
+
+</PreferenceScreen>
